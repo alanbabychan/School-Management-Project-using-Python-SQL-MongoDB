@@ -1,0 +1,37 @@
+CREATE DATABASE schoolmgt;
+
+CREATE TABLE st (
+    admno INT PRIMARY KEY,
+    name VARCHAR(20),
+    class VARCHAR(20),
+    city VARCHAR(20),
+    dob DATE
+);
+
+CREATE TABLE emp (
+    empno INT PRIMARY KEY,
+    name VARCHAR(20),
+    job VARCHAR(20),
+    hiredate DATE
+);
+
+CREATE TABLE fees (
+    admno INT PRIMARY KEY,
+    fees FLOAT,
+    monthunpaid VARCHAR(20)
+);
+
+CREATE TABLE attendance (
+    admno INT PRIMARY KEY,
+    present INT,
+    totalpresent INT,
+    per FLOAT
+);
+
+CREATE TABLE school (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    sname VARCHAR(20),
+    noofstudent INT,
+    noofemployee INT,
+    nooflabs INT
+);
